@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')({sigint: true});
-
+const term = require( 'terminal-kit' ).terminal ;
 const hat = '^';
 const hole = 'O';
 const fieldCharacter = '░';
@@ -30,8 +30,13 @@ static randomNumber(num_Y, num_X){
   // add start position
   field[0][0] = pathCharacter;
   // add one hat
-  const hatPosition = this.randomNumber(num_y, num_x);
+  let hatPosition = [0,0];
+  while(hatPosition[0] === 0 && hatPosition[1] === 0){
+    hatPosition = this.randomNumber(num_y, num_x);
+  }
   field[hatPosition[0]][hatPosition[1]] = hat;
+  
+  
   // add chosen % holes to field
   const fieldSize = num_y * num_x;
   for(let k = 0; k < Math.ceil(fieldSize * (percentage/100)); k++){
@@ -51,7 +56,7 @@ static randomNumber(num_Y, num_X){
 // Check if the player is still on the field
   checkValidPosition(num_y, num_x){
     if(num_y >= this.field.length || num_x >= this.field[0].length || num_x < 0 || num_y < 0){
-      console.log("You are out of bounds. Stay in the field!");
+      term.red("You are out of bounds. Stay in the field!");
       playing = false;
       return playing;
     }
@@ -92,7 +97,21 @@ print(){
       for(let j = 0; j < this.field[i].length; j++){
         outputString += this.field[i][j];
       }
-      console.log(outputString);
+      for(let k = 0; k < this.field[0].length; k++){
+        if(outputString.charAt(k) === hat){
+          term.brightGreen(outputString.charAt(k));
+        }
+        else if(outputString.charAt(k) === hole){
+          term.brightRed(outputString.charAt(k));
+        }
+        else if(outputString.charAt(k) === pathCharacter){
+          term.brightYellow(outputString.charAt(k));
+        }
+        else{
+          term.bgGray.brightCyan(outputString.charAt(k));
+        }
+      }
+      console.log();
     }
   }
 
@@ -142,7 +161,7 @@ print(){
 function playGame(field){
     while(playing){
       field.print();
-      let direction = prompt("Which way? ");
+      let direction = prompt(term.blue("Which way? "));
         switch(direction){
             case "r" : field.movePlayerRight();
             break;
@@ -152,11 +171,12 @@ function playGame(field){
             break;
             case "d" : field.movePlayerDown();
             break;
-            default : console.log("Which way? Right(r), Left(l), Up(u), or Down(d)");
+            default : term.red("Which way? Right(r), Left(l), Up(u), or Down(d)");
+            console.log();
         }
     }
 }
 
-const myField = new Field(Field.generateField(3, 4, 40));
+const myField = new Field(Field.generateField(4, 5, 40));
 playGame(myField);
 
