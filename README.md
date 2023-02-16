@@ -13,8 +13,8 @@ You lose if you fall in a hole **'0'** or go outside the maze.
 - Random Holes positions
 - Use of terminal-kit to pretify terminal output 
 ## Classes
-The Maze class generates an array of arrays to represent the maze. \ 
-The user can specify the mazeHeight and mazeWidth and the percentage of the Maze that will be filled with holes. \
+The Maze class generates an array of arrays to represent the maze.\ 
+The user can specify the mazeHeight and mazeWidth and the percentage of the Maze that will be filled with holes.\
 The Maze will have one starting point and one ending point.   
 ## Functions
 __randomNumber(mazeHeight, mazeWidth)__ \
