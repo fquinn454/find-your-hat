@@ -9,7 +9,7 @@ __Game Features__
 - Random Starting and End Point positions
 - Random Holes positions
 - Use of terminal-kit to pretify terminal output \
-__Functions__
+__Functions__ \
 *Generates a random point in the nested array \
 Used to select random starting point, end point and holes*
 - randomNumber(mazeHeight, mazeWidth) \
