@@ -3,6 +3,8 @@ The object of the game is to get from your starting point __'*'__ to your hat **
 You lose if you fall in a hole **'0'** or go outside the maze.
 
 # Find Your Hat Game
+## Demo
+![Find Your Hat Demo](mazedemo.gif)
 ## Game Features
 - The maze is made up of nested arrays, to represent the rows and columns
 - Maze generator(height, width, percentageHoles)
@@ -33,5 +35,4 @@ __print()__\
 Uses terminal-kit to print the characters in the maze in color on the terminal\
 
 
-## Demo
-![Find Your Hat Demo](mazedemo.gif)
+
