@@ -3,13 +3,13 @@ The object of the game is to get from your starting point __'*'__ to your hat **
 You lose if you fall in a hole **'0'** or go outside the maze.
 
 # Find Your Hat Game
-__Game Features__
+## Game Features
 - The maze is made up of nested arrays, to represent the rows and columns
 - Maze generator(height, width, percentageHoles)
 - Random Starting and End Point positions
 - Random Holes positions
 - Use of terminal-kit to pretify terminal output \
-__Functions__ \
+## Functions
 *Generates a random point in the nested array \
 Used to select random starting point, end point and holes*
 - randomNumber(mazeHeight, mazeWidth) \
