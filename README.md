@@ -1,6 +1,6 @@
 # find-your-hat
-The object of the game is to get from your starting point ***** to your hat **^** \
-You lose if you fall in a hole **0** or go outside the maze.
+The object of the game is to get from your starting point __'*'__ to your hat **'^'** \
+You lose if you fall in a hole **'0'** or go outside the maze.
 
 # Find Your Hat Game
 - Maze generator(height, width, percentageHoles)
