@@ -1,7 +1,7 @@
 # find-your-hat
 Small JavaScript Game
 
-# h1 Find Your Hat Game
+# Find Your Hat Game
 
-## h2 Demo
+## Demo
 ![Find Your Hat Demo](mazedemo.gif)
