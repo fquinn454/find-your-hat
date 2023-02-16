@@ -17,22 +17,22 @@ The user can specify the mazeHeight and mazeWidth and the percentage of the Maze
 The Maze will have one starting point and one ending point.   
 ## Functions
 __randomNumber(mazeHeight, mazeWidth)__ \
-Generates a random point in the nested array. Used to select random starting point, end point and holes. \
+Generates a random point in the nested array. Used to select random starting point, end point and holes. 
 
 __positionInArray(position, array)__ \
-Returns if a given position is already in an array. Used to check if a randomly selected point in the nested array is already a hole. \
+Returns if a given position is already in an array. Used to check if a randomly selected point in the nested array is already a hole. 
 
 __checkValidPosition(num_y, num_x)__\
-Checks if the player is still in the maze or has gone out of bounds. \
+Checks if the player is still in the maze or has gone out of bounds. 
 
 __moveLeft(), moveRight(), moveUp(), moveDown()__ \
-Functions change the this.playerPosition within the Maze Class to move around the maze\
+Functions change the this.playerPosition within the Maze Class to move around the maze
 
 __checkPlayerStatus()__\
-Checks if the player has found their hat(won) or fallen in a hole(Lost) \
+Checks if the player has found their hat(won) or fallen in a hole(Lost) 
 
 __print()__\
-Uses terminal-kit to print the characters in the maze in color on the terminal \
+Uses terminal-kit to print the characters in the maze in color on the terminal 
 
 
 
