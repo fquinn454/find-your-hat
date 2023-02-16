@@ -1,5 +1,5 @@
 # find-your-hat
-The object of the game is to get from your staring point * to your hat ^
+The object of the game is to get from your staring point * to your hat ^ \
 You lose if you fall in a hole 0 or go outside the maze.
 
 # Find Your Hat Game
