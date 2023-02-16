@@ -8,12 +8,12 @@ __Game Features__
 - Maze generator(height, width, percentageHoles)
 - Random Starting and End Point positions
 - Random Holes positions
-- Use of terminal-kit to pretify terminal output
+- Use of terminal-kit to pretify terminal output \
 __Functions__
-*Generates a random point in the nested array /
+*Generates a random point in the nested array \
 Used to select random starting point, end point and holes*
-- randomNumber(mazeHeight, mazeWidth) /
-*Returns if a given position is already in an array /
+- randomNumber(mazeHeight, mazeWidth) \
+*Returns if a given position is already in an array \
 used to check if a randomly selected point in the nested array is already a hole*
 - function positionInArray(position, array)
 
