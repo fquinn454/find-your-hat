@@ -11,9 +11,8 @@ __Game Features__
 - Use of terminal-kit to pretify terminal output
 __Functions__
 *Generates a random point in the nested array /
-Used to select random starting point, end point and holes
-*
-- randomNumber(mazeHeight, mazeWidth) 
+Used to select random starting point, end point and holes*
+- randomNumber(mazeHeight, mazeWidth) /
 *Returns if a given position is already in an array /
 used to check if a randomly selected point in the nested array is already a hole*
 - function positionInArray(position, array)
