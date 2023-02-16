@@ -1,6 +1,6 @@
 # find-your-hat
 The object of the game is to get from your starting point __'*'__ to your hat **'^'** \
-You can move Up(u), Down(d), Left(l) or Right(r).
+You can move Up(u), Down(d), Left(l) or Right(r).\
 You lose if you fall in a hole **'0'** or go outside the maze.
 
 # Find Your Hat Game
@@ -13,7 +13,7 @@ You lose if you fall in a hole **'0'** or go outside the maze.
 - Random Holes positions
 - Use of terminal-kit to pretify terminal output 
 ## Classes
-The Maze class generates an array of arrays to represent the maze.\ 
+The Maze class generates an array of arrays to represent the maze.\
 The user can specify the mazeHeight and mazeWidth and the percentage of the Maze that will be filled with holes.\
 The Maze will have one starting point and one ending point.   
 ## Functions
