@@ -12,7 +12,8 @@ The maze provided by the game will always have a solution.
 - Maze solver function to check game maze can be solved by player.
 - Random Starting and End Point positions
 - Random Holes positions
-- Use of terminal-kit to pretify terminal output/
+- Use of terminal-kit to pretify terminal output
+/
 (I'm not sure why the colours look off on the gif, they look fine on my terminal, maybe a screen recorder issue)
 ## Classes
 The Maze class generates an array of arrays to represent the maze.\
