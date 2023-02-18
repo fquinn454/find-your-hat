@@ -18,7 +18,7 @@ The user can specify the mazeHeight and mazeWidth and the percentage of the Maze
 The Maze will have one starting point and one ending point.   
 ## Functions
 __solveMaze(maze)__ \
-Checks the maze has a solution before maze is used for game.\
+Checks the maze has a solution before maze is used for game.
 
 __randomNumber(mazeHeight, mazeWidth)__ \
 Generates a random point in the nested array. Used to select random starting point, end point and holes. 
