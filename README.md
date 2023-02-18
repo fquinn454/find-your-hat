@@ -13,8 +13,7 @@ The maze provided by the game will always have a solution.
 - Random Starting and End Point positions
 - Random Holes positions
 - Use of terminal-kit to pretify terminal output
-/
-(I'm not sure why the colours look off on the gif, they look fine on my terminal, maybe a screen recorder issue)
+- (I'm not sure why the colours look off on the gif, they look fine on my terminal, maybe a screen recorder issue)
 ## Classes
 The Maze class generates an array of arrays to represent the maze.\
 The user can specify the mazeHeight and mazeWidth and the percentage of the Maze that will be filled with holes.\
