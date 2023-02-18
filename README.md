@@ -2,6 +2,7 @@
 The object of the game is to get from your starting point __'*'__ to your hat **'^'** \
 You can move Up(u), Down(d), Left(l) or Right(r).\
 You lose if you fall in a hole **'0'** or go outside the maze.
+The maze provided by the game will always have a solution.
 
 # Find Your Hat Game
 ## Demo
