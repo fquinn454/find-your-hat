@@ -7,8 +7,8 @@ You lose if you fall in a hole **'0'** or go outside the maze.
 ## Demo
 ![Find Your Hat Demo](mazedemo.gif)
 ## Game Features
-- The maze is made up of nested arrays, to represent the rows and columns
 - Maze generator(height, width, percentageHoles)
+- Maze solver function to check game maze can be solved by player.
 - Random Starting and End Point positions
 - Random Holes positions
 - Use of terminal-kit to pretify terminal output 
@@ -17,11 +17,14 @@ The Maze class generates an array of arrays to represent the maze.\
 The user can specify the mazeHeight and mazeWidth and the percentage of the Maze that will be filled with holes.\
 The Maze will have one starting point and one ending point.   
 ## Functions
+__solveMaze(maze)__ \
+Checks the maze has a solution before maze is used for game.\
+
 __randomNumber(mazeHeight, mazeWidth)__ \
 Generates a random point in the nested array. Used to select random starting point, end point and holes. 
 
-__positionInArray(position, array)__ \
-Returns if a given position is already in an array. Used to check if a randomly selected point in the nested array is already a hole. 
+__isAHole(maze, square)__ \
+Returns if a square in the maze contains a hole
 
 __checkValidPosition(num_y, num_x)__\
 Checks if the player is still in the maze or has gone out of bounds. 
